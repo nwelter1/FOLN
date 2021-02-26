@@ -6,7 +6,7 @@ from flask_login import login_required, login_user, current_user, logout_user
 
 @app.route('/')
 def home():
-    return render_template('base.html')
+    return render_template('home.html')
 
 @app.route('/12wk')
 def program():
@@ -26,6 +26,7 @@ def register():
         #Open and insert into db
         db.session.add(user)
         db.session.commit()
+        return redirect('login.html')
         #Email sender
         # msg = Message(f'Thanks for signing up, {username}!', recipients=[email])
         # msg.body = ('Congrats on your new DJ Pool account! Looking forward to seeing your posts!')
