@@ -60,3 +60,13 @@ def logout():
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
+
+#Services route
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+#contacts route
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
