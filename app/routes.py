@@ -48,3 +48,9 @@ def login():
             return redirect(url_for('login'))
 
     return render_template('login.html', form=form)
+
+#log out route
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
