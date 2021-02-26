@@ -10,7 +10,7 @@ def home():
 
 @app.route('/12wk')
 def program():
-    return render_template('dash.html')
+    return render_template('12wk.html')
 
 # Register Route
 @app.route('/register', methods=['GET', 'POST'])
