@@ -2,7 +2,7 @@
 
 {% block content %}
     {% if current_user.email == 'nwelter11@gmail.com' or current_user.email == 'psmith@fulloflifenutrition.com' %}
-        <h1>here's your admin page to make a post or do whatever (You only have access to this page if you;re nate of psmith@fulloflifenutrition.com</h1>
+        <h1>here's your admin page to make a post or do whatever (You only have access to this page if you're logged in as nate or psmith@fulloflifenutrition.com</h1>
     {% else %}
         <h1>gtfoh</h1>
     {% endif %}
