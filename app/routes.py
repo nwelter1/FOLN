@@ -26,7 +26,7 @@ def register():
         #Open and insert into db
         db.session.add(user)
         db.session.commit()
-        return redirect('login.html')
+        return redirect('login')
         #Email sender
         # msg = Message(f'Thanks for signing up, {username}!', recipients=[email])
         # msg.body = ('Congrats on your new DJ Pool account! Looking forward to seeing your posts!')
