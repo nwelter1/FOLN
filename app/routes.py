@@ -55,3 +55,8 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('home'))
+
+    #admin route
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
